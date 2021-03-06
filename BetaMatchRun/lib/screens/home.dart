@@ -1,3 +1,4 @@
+import 'package:BetaMatchRun/loginService/facebookAuthProviderService.dart';
 import 'package:BetaMatchRun/loginService/googleAuthProviderService.dart';
 import 'package:BetaMatchRun/screens/login.dart';
 import 'package:BetaMatchRun/screens/premium.dart';
@@ -21,11 +22,11 @@ class _HomeState extends State<Home> {
       drawer: new Drawer(
         child: ListView(
           children: <Widget>[
-            CustomGoogleDrawnerHeader(
-                GoogleAuthProviderService.instance.user.displayName,
-                GoogleAuthProviderService.instance.user.email,
-                GoogleAuthProviderService.instance.user.photoURL,
-            ),
+            // CustomGoogleDrawnerHeader(
+            //     GoogleAuthProviderService.instance.user.displayName,
+            //     GoogleAuthProviderService.instance.user.email,
+            //     GoogleAuthProviderService.instance.user.photoURL,
+            // ),
             CustomListTitle(
               Icons.person,
               'Perfil',
@@ -70,7 +71,8 @@ class _HomeState extends State<Home> {
               'Sair',
               () async {
                 EasyLoading.show(status: 'loading...');
-                await GoogleAuthProviderService.instance.signOut();
+                //await GoogleAuthProviderService.instance.signOut();
+                await AuthFacebook().logOut();
                 EasyLoading.dismiss();
                 Navigator.push(
                   context,

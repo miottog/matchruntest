@@ -3,6 +3,7 @@ import 'package:BetaMatchRun/screens/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 
 
 class FacebookLoginButton extends StatefulWidget {
@@ -12,7 +13,6 @@ class FacebookLoginButton extends StatefulWidget {
 }
 
 class _FacebookLoginButtonState extends State<FacebookLoginButton> {
-
 
   @override
   Widget build(BuildContext context) => Container(
@@ -49,7 +49,8 @@ class _FacebookLoginButtonState extends State<FacebookLoginButton> {
         ),
         onPressed: () async{
           EasyLoading.show(status: 'loading...');
-          await AuthFacebook().signInWithFacebook();
+          //await AuthFacebook().signInWithFacebook();
+          await AuthFacebook().login();
           EasyLoading.dismiss();
           Navigator.push(
             context,

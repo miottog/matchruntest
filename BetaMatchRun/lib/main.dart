@@ -13,6 +13,7 @@ class BetaMatchRun extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'BetaMatchRun',
       theme: ThemeData(
         primaryColor: Colors.blueAccent[300],
         accentColor: Colors.grey[700],

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BetaMatchRun</string>
-    <string name="facebook_app_id">1067127403756829</string>
-    <string name="fb_login_protocol_scheme">fb1067127403756829</string>
+    <string name="app_name">matchRun</string>
+    <string name="facebook_app_id">478663486498686</string>
+    <string name="fb_login_protocol_scheme">fb478663486498686</string>
 </resources>

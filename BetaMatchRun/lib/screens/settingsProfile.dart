@@ -1,4 +1,5 @@
-import 'file:///C:/Users/gabriel.b.rodrigues/BetaMatchRun/lib/components/appBar.dart';
+
+import 'package:BetaMatchRun/components/appBar.dart';
 import 'package:flutter/material.dart';
 
 class AccountManager extends StatelessWidget {

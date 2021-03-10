@@ -1,4 +1,5 @@
-import 'file:///C:/Users/gabriel.b.rodrigues/BetaMatchRun/lib/components/appBar.dart';
+
+import 'package:BetaMatchRun/components/appBar.dart';
 import 'package:BetaMatchRun/loginService/googleAuthProviderService.dart';
 import 'package:BetaMatchRun/screens/settingsProfile.dart';
 import 'package:flutter/material.dart';

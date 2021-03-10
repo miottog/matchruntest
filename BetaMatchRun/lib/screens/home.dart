@@ -71,8 +71,8 @@ class _HomeState extends State<Home> {
               'Sair',
               () async {
                 EasyLoading.show(status: 'loading...');
-                //await GoogleAuthProviderService.instance.signOut();
-                await AuthFacebook().logOut();
+                await GoogleAuthProviderService.instance.signOut();
+                //await AuthFacebook().logOut();
                 EasyLoading.dismiss();
                 Navigator.push(
                   context,

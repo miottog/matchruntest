@@ -98,6 +98,7 @@ class _HomeState extends State<Home> {
   }
 }
 
+// ignore: must_be_immutable
 class CustomListTitle extends StatefulWidget {
   IconData icon;
   String text;
@@ -145,6 +146,7 @@ class _CustomListTitleState extends State<CustomListTitle> {
   }
 }
 
+// ignore: must_be_immutable
 class CustomGoogleDrawnerHeader extends StatefulWidget {
   String name;
   String email;

@@ -21,7 +21,7 @@ class _GoogleState extends State<Google> {
       ),
     ),
     child: SizedBox.expand(
-      child: FlatButton(
+      child: TextButton(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[

@@ -37,7 +37,7 @@ class ProfileAccount extends StatelessWidget {
                     child: ButtonTheme (
                       minWidth: 50.0,
                       height: 50.0,
-                      child: RaisedButton(
+                      child: TextButton(
                         onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(

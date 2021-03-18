@@ -1,4 +1,3 @@
-import 'package:BetaMatchRun/loginService/facebookAuthProviderService.dart';
 import 'package:BetaMatchRun/loginService/googleAuthProviderService.dart';
 import 'package:BetaMatchRun/screens/login.dart';
 import 'package:BetaMatchRun/screens/premium.dart';
@@ -22,11 +21,11 @@ class _HomeState extends State<Home> {
       drawer: new Drawer(
         child: ListView(
           children: <Widget>[
-            // CustomGoogleDrawnerHeader(
-            //     GoogleAuthProviderService.instance.user.displayName,
-            //     GoogleAuthProviderService.instance.user.email,
-            //     GoogleAuthProviderService.instance.user.photoURL,
-            // ),
+            CustomGoogleDrawnerHeader(
+                GoogleAuthProviderService.instance.user.displayName,
+                GoogleAuthProviderService.instance.user.email,
+                GoogleAuthProviderService.instance.user.photoURL,
+            ),
             CustomListTitle(
               Icons.person,
               'Perfil',
@@ -158,34 +157,6 @@ class CustomGoogleDrawnerHeader extends StatefulWidget {
 }
 
 class _CustomDrawnerHeaderState extends State<CustomGoogleDrawnerHeader> {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(0.0, 0, 0.0, 0),
-      child: UserAccountsDrawerHeader(
-        accountName: Text(widget.name),
-        accountEmail: Text(widget.email),
-        currentAccountPicture: CircleAvatar(
-          backgroundImage: NetworkImage(widget.photo),
-        ),
-      ),
-    );
-  }
-}
-
-class CustomFacebookDrawnerHeader extends StatefulWidget {
-  String name;
-  String email;
-  String photo;
-
-  CustomFacebookDrawnerHeader(this.name, this.email, this.photo);
-
-  @override
-  _CustomFacebookDrawnerHeaderState createState() =>
-      _CustomFacebookDrawnerHeaderState();
-}
-
-class _CustomFacebookDrawnerHeaderState extends State<CustomFacebookDrawnerHeader> {
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -1,8 +1,7 @@
-import 'package:BetaMatchRun/components/appVersion.dart';
-import 'package:BetaMatchRun/components/facebookLoginButton.dart';
 import 'package:BetaMatchRun/components/googleLoginButton.dart';
 import 'package:flutter/material.dart';
 
+import 'home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -10,7 +9,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,24 +26,23 @@ class _LoginState extends State<Login> {
               height: 200,
               child: Image.asset("images/logoRunMatch.png"),
             ),
-            SizedBox(height: 90),
-            Google(),
-            SizedBox(height: 10),
+            SizedBox(height: 150),
             Container(
-              height: 40,
-              alignment: Alignment.center,
-              child: Text(
-                "ou",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
+              height: 50,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                color: Color(0xFF5387F8),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
                 ),
               ),
+              child: SizedBox.expand(
+                
+              ),
             ),
-            FacebookLoginButton(),
-            SizedBox(height: 200),
-            AppVersion(),
+            SizedBox(height: 20),
+            Google(),
+            SizedBox(height: 10),
           ],
         ),
       ),

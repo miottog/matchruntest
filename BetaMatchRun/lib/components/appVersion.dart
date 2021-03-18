@@ -5,7 +5,7 @@ class AppVersion extends StatelessWidget {
   Widget build(BuildContext context) => Container(
     height: 40,
     child: Text(
-      "Workaholics - Version 1.0.0.1",
+      "Workaholics - Version 1.0.0.2",
       textAlign: TextAlign.center,
     ),
   );
